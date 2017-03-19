@@ -1,4 +1,5 @@
 import MySQLdb
+import sys, getopt
 
 class Database:
 
@@ -32,3 +33,10 @@ class Database:
 if __name__ == "__main__":
 
     db = Database()
+    insert_query = """
+        INSERT INTO test_tables
+        (`ID`, `IP`, `Type`, `Field1`, `Field2`)
+        VALUES
+        ('1', , '192.168.1.1', 1, 1, 0),
+        """
+    db.insert(insert_query)
