@@ -1,12 +1,22 @@
 import sys
 
-for count in sys.stdin.read():
-    int_count = int(count.rstrip())
-    number = 0
-    if int_count >= 10000 or number >= 10000:
-        print "Ooops, number is large"
-    else:
-       print number // int_count
+num_list = sys.stdin.read().split()
+print num_list
+count = int(num_list[0])
+number = int(num_list[1])
+print type(count)
+print type(number)
+if count >= 10000 or number >= 10000:
+    print "Oooopsss"
+else:
+    print number // count
 
-    number = count
+#    c = int(count)
+#    number = 0
+#    if c >= 10000 or number >= 10000:
+#        print "Ooops, number is large"
+#    else:
+#       print number // c
+
+#    number = c
 
