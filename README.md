@@ -18,3 +18,11 @@ TASK 2
 Гарантируется, что в какой-то момент сумма введённых чисел окажется равной 0, после этого считывание продолжать не нужно.
 
 В примере мы считываем числа 1, -3, 5, -6, -10, 13; в этот момент замечаем, что сумма этих чисел равна нулю и выводим сумму их квадратов, не обращая внимания на то, что остались ещё не прочитанные значения.
+
+
+ONE MORE TASK
+The element of a sequence is called a local maximum, if it is strictly greater than the previous and the subsequent element of the sequence. The first and the last elements of the sequence are not the local maximum.
+
+Given the sequence of natural numbers, ending with number 0. The number 0 itself is not included into the sequence and serves as a sign of its end.
+
+Find the number of strict local maximums in this sequence.
