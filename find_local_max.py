@@ -12,7 +12,7 @@ def localMaxLst(lstIn):
     m = lstIn[0]  # the first element as the maximum...
     candidate = True  # ... candidate
 
-    for elem in lstIn[1:]:  # through elements from the second one
+    for elem in lstIn[1:-1]:  # through elements from the second one
         if elem > m:
             m = elem  # better candidate
             candidate = True
@@ -30,4 +30,3 @@ def localMaxLst(lstIn):
 
 for elem in set(localMaxLst(my_list)):
     print elem
-    
